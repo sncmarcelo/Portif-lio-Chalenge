@@ -1,0 +1,68 @@
+@import url("reset.css");
+@import url("header.css");
+
+
+body {
+    background-color: #F5F5F5;
+    line-height: 1;
+    font-family: 'Raleway';
+    color: #464646;
+    /* padding: 10px 100px; Será que tem que por isso pra colocar um padrão de padding pra tudo? Verificar!*/ 
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    padding: 0 155px;
+}
+
+.profile {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.profile-img {
+    display: flex;
+    height: 50%;
+    width: 40%;
+    border-radius: 100%;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 50px;
+}
+
+.profile-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.profile-network {
+    display: flex;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+@media (min-width:1024px) {
+    .profile {
+        padding: 10px 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+}
